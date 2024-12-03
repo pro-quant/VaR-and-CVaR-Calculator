@@ -45,6 +45,16 @@ def monte_carlo_simulation(returns, num_simulations=10000):
 # Streamlit UI
 st.title("Risk Management Tool: VaR and CVaR Calculator")
 
+############################################## FIX ############################################
+# Add a message in red text indicating the file format limitation
+st.markdown(
+    """
+    <span style="color:red">**Note**: This app does not currently support Excel files. Please upload a CSV file instead.</span>
+    """, 
+    unsafe_allow_html=True
+)
+###############################################################################################
+
 
 # Add a link to the data download page
 st.markdown(
